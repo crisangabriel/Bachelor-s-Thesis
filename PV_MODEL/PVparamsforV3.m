@@ -6,11 +6,11 @@ Rated_power = 250; % W
 % Short-circuit current
 Isc = 8.61; % A
 % Open-circuit voltage
-Voc = 37.41; % V
+Voc = 38.41; % V
 % Temperature coefficient of Isc
-Ki = 0.05 /100; % %/K to fraction/K
+Ki = 0.05 % /100; % %/K to fraction/K
 % Temperature coefficient of Voc
-Kv = -0.32 /100; % %/K to fraction/K
+Kv = -0.32 % /100; % %/K to fraction/K
 % Series Resistance
 Rs = 0.22; % Ohms
 % Shunt Resistance
