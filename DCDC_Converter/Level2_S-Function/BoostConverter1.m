@@ -1,4 +1,4 @@
-function [sys,x0,str,ts,simStateCompliance] = BoostConverter(t,x,u,flag)
+function [sys,x0,str,ts,simStateCompliance] = BoostConverter1(t,x,u,flag)
 
 switch flag,
   %%%%%%%%%%%%%%%%%%
