@@ -1,16 +1,16 @@
 clear all;
 close;
-%E=30;       % input voltage value
-L=350e-6;     % inductor value
-C=128.78e-6;    % capacitor value
-R=4.6;       % load value
+E=90;       % input voltage value
+L=8945e-6;     % inductor value
+C=106.75e-6;    % capacitor value
+R=48.48;       % load value
 
 Q=sqrt(L./C)./R;
 T0=2.*pi.*sqrt(L.*C);
 
 T=10e-6;    % switching period
-%D=0.38;      % duty-cycle
-N=1000;       % numbers of periods to be displayed
+D=0.625;      % duty-cycle
+N=2000;       % numbers of periods to be displayed
 
 %p=1;        % default plotting regime (transient)
 
