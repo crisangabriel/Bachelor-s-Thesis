@@ -1,0 +1,214 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   27 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "doneDoubleBufferReInit"\
+      Description  "DoubleBufferInitCheck"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c5_simscape_final"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c5_simscape_final"\
+      Path         "is_active_c5_simscape_final"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "u"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:812-813"\
+    }\
+    ChartData {\
+      Name         "u_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:812-813"\
+    }\
+    ChartData {\
+      Name         "d_current"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:826-835"\
+    }\
+    ChartData {\
+      Name         "d_current_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:826-835"\
+    }\
+    ChartData {\
+      Name         "pbest"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:848-853"\
+      Dimensions   [4]\
+    }\
+    ChartData {\
+      Name         "pbest_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:848-853"\
+    }\
+    ChartData {\
+      Name         "p"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:866-867"\
+      Dimensions   [4]\
+    }\
+    ChartData {\
+      Name         "p_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:866-867"\
+    }\
+    ChartData {\
+      Name         "dc"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:880-882"\
+      Dimensions   [4]\
+    }\
+    ChartData {\
+      Name         "dc_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:880-882"\
+    }\
+    ChartData {\
+      Name         "v"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:895-896"\
+      Dimensions   [4]\
+    }\
+    ChartData {\
+      Name         "v_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:895-896"\
+    }\
+    ChartData {\
+      Name         "count"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:909-914"\
+    }\
+    ChartData {\
+      Name         "count_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:909-914"\
+    }\
+    ChartData {\
+      Name         "gbest"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:927-932"\
+    }\
+    ChartData {\
+      Name         "gbest_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "simscape_final:55:927-932"\
+    }\
+    ChartData {\
+      Name         "method"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand.m:523-529"\
+    }\
+    ChartData {\
+      Name         "method_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand.m:523-529"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_mcg16807_stateful.m:164-169"\
+    }\
+    ChartData {\
+      Name         "state_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_mcg16807_stateful.m:164-169"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_shr3cong_stateful.m:165-170"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "state_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_shr3cong_stateful.m:165-170"\
+    }\
+    ChartData {\
+      Name         "state"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_mt19937ar_stateful.m:166-171"\
+      Dimensions   [625]\
+    }\
+    ChartData {\
+      Name         "state_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "/Applications/MATLAB_R2023a.app/toolbox/eml/lib/matlab/randfun/private/eml_rand_mt19937ar_stateful.m:166-171"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
