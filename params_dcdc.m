@@ -9,7 +9,7 @@ Q=sqrt(L./C)./R;
 T0=2.*pi.*sqrt(L.*C);
 
 T=10e-6;    % switching period
-%D=0.38;      % duty-cycle
+D=0.38;      % duty-cycle
 N=1000;       % numbers of periods to be displayed
 
 %p=1;        % default plotting regime (transient)
